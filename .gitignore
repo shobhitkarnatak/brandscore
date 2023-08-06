@@ -1,0 +1,8 @@
+node_modules
+/app/styles
+/app/styles/*.css
+/.cache
+/build
+/public/build
+.env
+*.zip

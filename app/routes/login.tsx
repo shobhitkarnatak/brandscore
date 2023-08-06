@@ -3,9 +3,7 @@ import { json } from "@remix-run/node";
 import { Form, useActionData, useTransition } from "@remix-run/react";
 import { redirect } from "@remix-run/server-runtime";
 import axios from "axios";
-// import jwt_decode from "jwt-decode";
 import { useEffect, useRef } from "react";
-import Navbar from "~/components/common/Navbar";
 import getServerApis from "~/services/env.server";
 // import { cookieVal } from "~/utils/tokenCookies";
 
@@ -130,9 +128,7 @@ export default function LoginRoute() {
 
   return (
     <div>
-      <header>
-        <Navbar />
-      </header>
+      <header></header>
       <main className="">
         <div className="mx-auto w-4/5 px-12 py-16">
           <div className="flex flex-col-reverse overflow-hidden rounded-3xl md:flex-row">

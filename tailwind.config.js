@@ -37,7 +37,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      QuickSand: ["Quicksand", "sans-serif"],
+      Nunito: ["Nunito", "sans-serif"],
     },
   },
   plugins: [require("tailwind-scrollbar"), require("@tailwindcss/line-clamp")],

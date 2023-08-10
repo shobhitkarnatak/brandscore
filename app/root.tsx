@@ -46,7 +46,7 @@ export function links() {
     },
     {
       rel: "stylesheet",
-      href: "https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap",
+      href: "https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans:opsz@6..12&display=swap",
     },
     {
       rel: "icon",
@@ -80,7 +80,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="mx-auto max-w-screen-2xl font-QuickSand">
+      <body className="mx-auto max-w-screen-2xl font-Nunito">
         <Outlet />
         <ScrollRestoration />
         <script

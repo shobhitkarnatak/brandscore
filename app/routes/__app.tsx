@@ -3,10 +3,9 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Navbar from "~/components/common/Navbar";
 import Sidebar from "~/components/common/Sidebar";
-
 import type { LoaderFunction } from "@remix-run/node";
 import { json } from "@remix-run/node";
-
+import "../styles/app.css";
 export const loader: LoaderFunction = async ({ request }) => {};
 
 export default function App() {

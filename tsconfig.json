@@ -1,7 +1,8 @@
 {
 	"include": ["remix.env.d.ts", "**/*.ts", "**/*.tsx"],
 	"compilerOptions": {
-		"lib": ["DOM", "DOM.Iterable", "ES2019"],
+		"types": ["node"],
+		"lib": ["DOM", "DOM.Iterable", "ES2019" ],
 		"isolatedModules": true,
 		"esModuleInterop": true,
 		"jsx": "react-jsx",
@@ -18,5 +19,10 @@
 
 		// Remix takes care of building everything in `remix build`.
 		"noEmit": true
-	}
+	},
+	"exclude": [
+		"node_modules",
+		"**/*.spec.ts"
+	  ]
+	
 }

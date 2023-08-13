@@ -12,7 +12,7 @@ export default function App() {
   return (
     <div className="relative z-0 h-screen ">
       <header className="sticky top-0 z-50 bg-white">
-        <Navbar userInfo={} />
+        <Navbar userInfo={""} />
       </header>
       <div className="flex-1">
         <div className="grid grid-cols-12">

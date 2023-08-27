@@ -1,40 +1,26 @@
 /** @format */
 
 import React from 'react';
-import { groupColumn } from 'utils/headers';
+import { groupColumn, industryColumn } from 'utils/headers';
 import { Table } from '~/components/common/Table';
 import '../../styles/app.css';
 const data = [
 	{
 		SNO: 1,
 		GROUP: 'Bharti Airtel',
+		INDUSTRY: 'Telecom',
+		INDUSTRY_KEYWORDS: '4G data, 5G data',
+		SEAGMENTS: 'Financial, COVID19',
 	},
 	{
 		SNO: 2,
 		GROUP: 'Bharti Airtel',
-	},
-	{
-		SNO: 3,
-		GROUP: 'Bharti Airtel',
-	},
-	{
-		SNO: 4,
-		GROUP: 'Bharti Airtel',
-	},
-	{
-		SNO: 5,
-		GROUP: 'Bharti Airtel',
-	},
-	{
-		SNO: 6,
-		GROUP: 'Bharti Airtel',
-	},
-	{
-		SNO: 7,
-		GROUP: 'Bharti Airtel',
+		INDUSTRY: 'Telecom',
+		INDUSTRY_KEYWORDS: '4G data, 5G data',
+		SEAGMENTS: 'Financial, COVID19',
 	},
 ];
-export default function Group() {
+export default function Industry() {
 	return (
 		<div className='border border-gray-300 ml-64 mr-10 rounded-md p-4'>
 			<div className='flex flex-col'>
@@ -45,7 +31,7 @@ export default function Group() {
 						className='border border-gray-300 outline-none rounded-md'></input>
 				</div>
 				<div>
-					<Table tableData={data} column={groupColumn} />
+					<Table tableData={data} column={industryColumn} />
 				</div>
 			</div>
 		</div>

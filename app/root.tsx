@@ -14,7 +14,7 @@ import {
 } from '@remix-run/react';
 import toastStyles from 'react-toastify/dist/ReactToastify.css';
 import styles from './styles/app.css';
-import Nprogress from 'nprogress';
+// import Nprogress from 'nprogress';
 import nprogressStyles from 'nprogress/nprogress.css';
 import { useEffect } from 'react';
 
@@ -54,7 +54,7 @@ export function links() {
 			rel: 'icon',
 			type: 'image/svg+xml',
 			sizes: '16x16',
-			href: 'https://5pinsdatalakestorage2.blob.core.windows.net/static-images/newfavicon.svg',
+			href: 'http://brandscore.in/assets/images/Incight_favicon.png',
 		},
 	];
 }
@@ -70,9 +70,9 @@ export default function App() {
 	const data = useLoaderData<typeof loader>();
 	useEffect(() => {
 		if (transition.state === 'loading' || transition.state === 'submitting') {
-			Nprogress.start();
+			// Nprogress.start();
 		} else {
-			Nprogress.done();
+			// Nprogress.done();
 		}
 	}, [transition.state]);
 

@@ -64,7 +64,7 @@ export function Table({ tableData, column, totalCount }: any) {
 								{headerGroup.headers?.map((header) => (
 									<th
 										key={header.id}
-										className='py-4 w-20 text-[14px] font-bold text-left px-2 bg-[#E2EBF0]'>
+										className='py-4 w-20 text-[14px] font-bold text-left px-4 bg-[#E2EBF0]'>
 										{header.isPlaceholder
 											? null
 											: flexRender(
@@ -88,7 +88,7 @@ export function Table({ tableData, column, totalCount }: any) {
 										{row.getVisibleCells().map((cell) => (
 											<td
 												key={cell.id}
-												className={`w-4 text-black font-[400] text-left capitalize text-base px-1 py-2 border-b border-gray-400`}>
+												className={`px-4 w-4 text-black font-[400] text-left capitalize text-sm py-2 border-b border-gray-400`}>
 												{flexRender(
 													cell.column.columnDef.cell,
 													cell.getContext()
@@ -118,7 +118,7 @@ export function Table({ tableData, column, totalCount }: any) {
 							setPageSize(Number(e.target.value));
 							limitHandler(Number(e.target.value), page, search);
 						}}
-						className='border px-4 py-2 border-gray-400 rounded-lg'>
+						className='border px-2 py-2 border-gray-400 rounded-lg text-xs'>
 						{[30, 60, 90, 120, 150].map((pageSize) => (
 							<option key={pageSize} value={pageSize}>
 								Show {pageSize}
@@ -129,7 +129,7 @@ export function Table({ tableData, column, totalCount }: any) {
 						<button
 							onClick={() => limitHandler(pageSize, page - 1, search)}
 							disabled={page === 1}
-							className='px-4 text-sm flex items-center gap-x-2 justify-center py-1.5 border border-gray-400 bg-white rounded-md'>
+							className='px-2 text-xs flex items-center gap-x-2 justify-center py-1 border border-gray-400 bg-white rounded-md'>
 							<ArrowLeftIcon className='w-4 h-6' />
 							Prev
 						</button>
@@ -137,13 +137,13 @@ export function Table({ tableData, column, totalCount }: any) {
 							type='button'
 							onClick={() => limitHandler(pageSize, page + 1, search)}
 							disabled={totalPage == page}
-							className='px-4 flex text-sm items-center gap-x-2 justify-center py-1.5 border border-gray-400 bg-white rounded-md'>
+							className='px-2 flex text-xs items-center gap-x-2 justify-center py-1 border border-gray-400 bg-white rounded-md'>
 							Next
 							<ArrowRightIcon className='w-4 h-6' />
 						</button>
 						<span>
 							Page{' '}
-							<strong>
+							<strong className='text-sm'>
 								{page} of {totalPage}
 							</strong>
 						</span>

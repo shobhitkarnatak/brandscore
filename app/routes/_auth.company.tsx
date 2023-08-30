@@ -1,26 +1,35 @@
 /** @format */
-
-import React from 'react';
-import { groupColumn, industryColumn } from 'utils/headers';
 import { Table } from '~/components/common/Table';
-import '../../styles/app.css';
+import { companyColumn } from '~/utils/headers';
 const data = [
 	{
 		SNO: 1,
+		COMPANY: 'Idea',
 		GROUP: 'Bharti Airtel',
 		INDUSTRY: 'Telecom',
-		INDUSTRY_KEYWORDS: '4G data, 5G data',
+		CATEGORY: 'India',
+		NEWS_KEYWORDS: 'Vodphone',
+		TWITTER_KEYWORDS: 'Vodphone',
+		INTERNAL_KEYWORDS: 'Vodphone',
+		FACEBOOK_PAGE: 'N/A',
+		TWITTER_HANDLER: '@twitter',
 		SEAGMENTS: 'Financial, COVID19',
 	},
 	{
 		SNO: 2,
+		COMPANY: 'Idea',
 		GROUP: 'Bharti Airtel',
 		INDUSTRY: 'Telecom',
-		INDUSTRY_KEYWORDS: '4G data, 5G data',
+		CATEGORY: 'India',
+		NEWS_KEYWORDS: 'Vodphone',
+		TWITTER_KEYWORDS: 'Vodphone',
+		INTERNAL_KEYWORDS: 'Vodphone',
+		FACEBOOK_PAGE: 'N/A',
+		TWITTER_HANDLER: '@twitter',
 		SEAGMENTS: 'Financial, COVID19',
 	},
 ];
-export default function Industry() {
+export default function Company() {
 	return (
 		<div className='border border-gray-300 ml-64 mr-10 rounded-md p-4'>
 			<div className='flex flex-col'>
@@ -31,7 +40,7 @@ export default function Industry() {
 						className='border border-gray-300 outline-none rounded-md'></input>
 				</div>
 				<div>
-					<Table tableData={data} column={industryColumn} />
+					<Table tableData={data} column={companyColumn} />
 				</div>
 			</div>
 		</div>

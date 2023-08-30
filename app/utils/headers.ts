@@ -1,6 +1,10 @@
 /** @format */
 
-import { groupDetails, industryDetails, companyDetails } from './columnUI';
+import { CompanyDetails, GroupDetails, IndustryDetails } from "~/components/columnUi";
+
+
+
+ 
 
 export const groupColumn = [
 	{
@@ -13,7 +17,7 @@ export const groupColumn = [
 	},
 	{
 		header: 'Action',
-		cell: ({ row }: any) => groupDetails(row),
+		cell: ({ row }: any) => GroupDetails(row),
 	},
 ];
 
@@ -40,7 +44,7 @@ export const industryColumn = [
 	},
 	{
 		header: 'Action',
-		cell: ({ row }: any) => industryDetails(row),
+		cell: ({ row }: any) => IndustryDetails(row),
 	},
 ];
 
@@ -91,7 +95,7 @@ export const companyColumn = [
 	},
 	{
 		header: 'Action',
-		cell: ({ row }: any) => companyDetails(row),
+		cell: ({ row }: any) => CompanyDetails(row),
 	},
 ];
 
@@ -126,6 +130,6 @@ export const userControlColumn = [
 	},
 	{
 		header: 'Action',
-		cell: ({ row }: any) => industryDetails(row),
+		cell: ({ row }: any) => IndustryDetails(row),
 	},
 ];

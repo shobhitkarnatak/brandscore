@@ -1,8 +1,7 @@
 /** @format */
 
-import React from 'react';
-
-export default function CreateGroup() {
+export default function Create() {
+	console.log("HHHel create")
 	return (
 		<div className='border border-gray-300 ml-64 mr-10 rounded-md p-4'>
 			<div>

@@ -2,20 +2,19 @@
 
 import {
 	flexRender,
-	PaginationState,
 	getCoreRowModel,
 	getPaginationRowModel,
 	useReactTable,
 	getFilteredRowModel,
 } from '@tanstack/react-table';
-import { useLocation, useNavigate, useSearchParams } from '@remix-run/react';
+import {  useNavigate, useSearchParams } from '@remix-run/react';
 import { useEffect, useMemo, useState } from 'react';
 import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/24/solid';
 
 export function Table({ tableData, column, totalCount }: any) {
-	console.log(tableData);
+	 
 	const columns = column;
-	const { pathname } = useLocation();
+ 
 	const navigate = useNavigate();
 	const data: any = useMemo(() => tableData || [], [tableData]);
 
@@ -43,7 +42,7 @@ export function Table({ tableData, column, totalCount }: any) {
 
 	const limitHandler = (limit: any, page: any, value: any) => {
 		setSizePage(limit);
-		const currentUrl = location.pathname;
+		 
 		let url = `${location.pathname}?limit=${limit}&page=${page}`;
 		navigate(url);
 	};

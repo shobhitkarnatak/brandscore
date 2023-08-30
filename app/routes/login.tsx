@@ -1,31 +1,21 @@
-import type { ActionFunction, LoaderFunction } from "@remix-run/node";
-import { json } from "@remix-run/node";
-import { Form, useActionData, useTransition } from "@remix-run/react";
-import { redirect } from "@remix-run/server-runtime";
-import axios from "axios";
-import { useEffect, useRef } from "react";
-import getServerApis from "~/services/env.server";
-// import { cookieVal } from "~/utils/tokenCookies";
 
 export default function LoginRoute() {
-  let transition = useTransition();
-  let actionData = useActionData();
-  const isLoading = transition.state === "submitting";
-
-  useEffect(() => {}, []);
-
+  
+  
   return (
     <div>
       <main>
         <div className="grid w-full grid-cols-2">
           <div className="relative">
             <img
+             alt="icon"
               src="http://brandscore.in/assets/images/img1.jpg"
               className="h-[100vh] w-full"
             />
             <div className="absolute top-0 h-full w-full bg-[#6b46c1] bg-opacity-80"></div>
             <div className="absolute left-[25%] top-[50%]">
               <img
+                alt="icon"
                 src="http://brandscore.in/assets/images/incight-logo-white.png"
                 className="w-[300px]"
               />

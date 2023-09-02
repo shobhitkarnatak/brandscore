@@ -40,4 +40,19 @@ export const defaultNavItems: NavItem[] = [
 		href: '/user-control',
 		icon: <CalendarIcon className='w-6 h-6' />,
 	},
+	{
+		label: 'Source',
+		href: '/source',
+		icon: <CalendarIcon className='w-6 h-6' />,
+	},
+	{
+		label: 'Source Global',
+		href: '',
+		icon: <CalendarIcon className='w-6 h-6' />,
+	},
+	{
+		label: 'Twitter Handler',
+		href: '',
+		icon: <CalendarIcon className='w-6 h-6' />,
+	},
 ];

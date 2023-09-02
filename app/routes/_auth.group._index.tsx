@@ -34,7 +34,7 @@ const data = [
 ];
 export default function Group() {
 	return (
-		 
+		<>
 			<div className='flex flex-col'>
 				<div className='justify-end flex mb-4'>
 					Search: &nbsp;
@@ -45,8 +45,7 @@ export default function Group() {
 				<div>
 					<Table tableData={data} column={groupColumn} />
 				</div>
-				
 			</div>
-		 
+		</>
 	);
 }

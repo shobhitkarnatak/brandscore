@@ -1,9 +1,9 @@
 /** @format */
 
 export default function Create() {
-	console.log("HHHel create")
+	console.log('HHHel create');
 	return (
-		<div className='border border-gray-300 ml-64 mr-10 rounded-md p-4'>
+		<div className='border border-gray-300 mr-10 rounded-md p-4'>
 			<div>
 				<h1 className='font-extrabold mb-4'>Create Group</h1>
 				<p>Add Group Name</p>

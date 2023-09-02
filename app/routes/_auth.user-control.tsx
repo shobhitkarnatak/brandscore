@@ -23,7 +23,7 @@ const data = [
 ];
 export default function Industry() {
 	return (
-		<div className='border border-gray-300 ml-64 mr-10 rounded-md p-4'>
+		<div className='border border-gray-300 mr-10 rounded-md p-4'>
 			<div className='flex flex-col'>
 				<div className='justify-end flex mb-4'>
 					Search: &nbsp;

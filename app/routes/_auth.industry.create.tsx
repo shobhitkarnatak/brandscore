@@ -1,9 +1,8 @@
 /** @format */
 
-
 export default function CreateIndustry() {
 	return (
-		<div className='border border-gray-300 ml-64 mr-10 rounded-md p-4'>
+		<div className='border border-gray-300 mr-10 rounded-md p-4'>
 			<div>
 				<h1 className='font-extrabold mb-2'>Create Industry</h1>
 				<div className='mb-2'>

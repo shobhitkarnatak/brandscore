@@ -31,13 +31,13 @@ const data = [
 ];
 export default function Company() {
 	return (
-		<div className='border border-gray-300 ml-64 mr-10 rounded-md p-4'>
+		<div className='border border-gray-300 mr-10 rounded-md p-4'>
 			<div className='flex flex-col'>
 				<div className='justify-end flex mb-4'>
 					Search: &nbsp;
 					<input
 						type='text'
-						className='border border-gray-300 outline-none rounded-md'></input>
+						className='border border-gray-300 outline-none rounded-md py-1'></input>
 				</div>
 				<div>
 					<Table tableData={data} column={companyColumn} />

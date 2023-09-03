@@ -48,6 +48,95 @@ export const industryColumn = [
 	},
 ];
 
+export const SourceColumn = [
+	{
+		header: 'S. NO',
+		accessorKey: 'SNO',
+	},
+	{
+		header: 'Source',
+		accessorKey: 'SOURCE',
+	},
+	{
+		header: 'Source Url',
+		accessorKey: 'SOURCE_URL',
+	},
+	{
+		header: 'Category',
+		accessorKey: 'CATEGORY',
+	},
+	{
+		header: 'Reach(Millions)',
+		accessorKey: 'REACH',
+	},
+	{
+		header: 'RPS',
+		accessorKey: 'RPS',
+	},
+	{
+		header: 'Publication Type',
+		accessorKey: 'PUBLICATION_TYPE',
+	},
+	{
+		header: 'Language',
+		accessorKey: 'LANGUAGE',
+	},
+	
+	{
+		header: 'Action',
+		cell: ({ row }: any) => IndustryDetails(row),
+	},
+];
+
+export const SourceGlobalColumn = [
+	{
+		header: 'S. NO',
+		accessorKey: 'SNO',
+	},
+	{
+		header: 'Source',
+		accessorKey: 'SOURCE',
+	},
+	{
+		header: 'Source Url',
+		accessorKey: 'SOURCE_URL',
+	},
+	{
+		header: 'Reach(Millions)',
+		accessorKey: 'REACH',
+	},
+	{
+		header: 'RPS',
+		accessorKey: 'RPS',
+	},
+	{
+		header: 'Publication Type',
+		accessorKey: 'PUBLICATION_TYPE',
+	},
+	{
+		header: 'Language',
+		accessorKey: 'LANGUAGE',
+	},
+	
+	{
+		header: 'Action',
+		cell: ({ row }: any) => IndustryDetails(row),
+	},
+];
+export const TwitterGlobalColumn = [
+	{
+		header: 'S. NO',
+		accessorKey: 'SNO',
+	},
+	{
+		header: 'Twitter Handle',
+		accessorKey: 'TWITTER_HANDLE',
+	},
+	{
+		header: 'Action',
+		cell: ({ row }: any) => IndustryDetails(row),
+	},
+];
 export const companyColumn = [
 	{
 		header: 'S. NO',

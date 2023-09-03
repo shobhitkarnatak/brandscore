@@ -47,12 +47,12 @@ export const defaultNavItems: NavItem[] = [
 	},
 	{
 		label: 'Source Global',
-		href: '',
+		href: '/sourceglobal',
 		icon: <CalendarIcon className='w-6 h-6' />,
 	},
 	{
 		label: 'Twitter Handler',
-		href: '',
+		href: '/twitterhandle',
 		icon: <CalendarIcon className='w-6 h-6' />,
 	},
 ];

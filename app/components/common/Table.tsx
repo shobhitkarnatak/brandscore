@@ -53,7 +53,7 @@ export function Table({ tableData, column, totalCount }: any) {
 
 	return (
 		<>
-			<div className='max-w-full overflow-x-auto mb-6'>
+			<div className='max-w-full overflow-x-auto mb-6 bg-white'>
 				<table className='w-full border border-gray-300 relative'>
 					<thead className=''>
 						{table?.getHeaderGroups()?.map((headerGroup) => (

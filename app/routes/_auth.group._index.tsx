@@ -36,11 +36,11 @@ export default function Group() {
 	return (
 		<>
 			<div className='flex flex-col'>
-				<div className='justify-end flex mb-4'>
+				<div className='justify-end items-center flex mb-4'>
 					Search: &nbsp;
 					<input
 						type='text'
-						className='border border-gray-300 outline-none rounded-md'></input>
+						className='border border-gray-300 outline-none rounded-md py-1'></input>
 				</div>
 				<div>
 					<Table tableData={data} column={groupColumn} />

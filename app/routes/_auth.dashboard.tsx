@@ -1,5 +1,7 @@
 /** @format */
 
+import { UserIcon } from '@heroicons/react/24/solid';
+
 const data = [
 	{
 		id: 1,
@@ -37,14 +39,14 @@ export default function Dashboard() {
 			<div className='flex flex-wrap gap-x-2 gap-y-6'>
 				{data.map((item: any, index: any) => (
 					<div
-						className='border w-80 bg-white px-4 py-6 rounded-lg cursor-pointer'
+						className='border w-80 bg-white flex justify-between px-4 py-6 rounded-lg cursor-pointer'
 						key={index}>
 						<div className='gap-2'>
 							<p className='font-black text-xl'>{item?.count}</p>
 							<p className='text-base'>{item?.name}</p>
 						</div>
-						<div>
-							<img src=''></img>
+						<div className='bg-[#3086ff40] h-10 w-10 items-center justify-center flex border rounded-full'>
+							<UserIcon className='w-4 h-4 text-[#25378b]' />
 						</div>
 					</div>
 				))}

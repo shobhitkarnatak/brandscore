@@ -8,6 +8,7 @@ import {
 } from '@heroicons/react/24/outline';
 import { Link, useLocation } from '@remix-run/react';
 import { defaultNavItems } from './defaultNavItems';
+import { Bars2Icon, Bars3Icon } from '@heroicons/react/24/solid';
 
 export type NavItem = {
 	label: string;
@@ -62,7 +63,7 @@ const Sidebar = ({
 					<button
 						className='grid place-content-center hover:bg-blue-600 w-10 h-10 rounded-full opacity-0 md:opacity-100 hover:text-white'
 						onClick={() => setCollapsed(!collapsed)}>
-						<Icon className='w-5 h-5' />
+						<Bars3Icon className='w-5 h-5' />
 					</button>
 				</div>
 				<div className='flex px-4 py-2 '>
@@ -82,24 +83,27 @@ const Sidebar = ({
 				<nav className='flex-grow'>
 					<ul
 						className={classNames({
-							'my-2 flex flex-col gap-2 items-stretch': true,
+							'my-2 flex flex-col items-stretch': true,
 						})}>
 						{navItems.map((item, index) => {
 							return (
-								<li
-									key={index}
-									className={classNames({
-										'text-gray-800 text-sm flex': true, //colors
-										'transition-colors duration-300': true, //animation
-										'rounded-md p-2 px-3 gap-4 ': !collapsed,
-										'rounded-full p-2 mx-3 w-10 h-10': collapsed,
-										'bg-gradient-to-br from-[#f54266] via-[#3858f9] to-[#3858f9] text-white':
-											pathname === item.href,
-									})}>
-									<Link to={item.href} className='flex gap-2'>
-										{item.icon} <span>{!collapsed && item.label}</span>
-									</Link>
-								</li>
+								<Link to={item.href}>
+									<li
+										key={index}
+										className={classNames({
+											'text-gray-800 text-sm flex border border-dotted border-[#ecedf2]':
+												true, //colors
+											'transition-colors duration-300': true, //animation
+											'rounded-md p-2 py-3 px-3 gap-4 ': !collapsed,
+											'rounded-full p-3 mx-3 w-10 h-10': collapsed,
+											'bg-gradient-to-br from-[#f54266] via-[#3858f9] to-[#3858f9] text-white':
+												pathname === item.href,
+										})}>
+										<a className='flex gap-2 items-center'>
+											{item.icon} <span>{!collapsed && item.label}</span>
+										</a>
+									</li>
+								</Link>
 							);
 						})}
 					</ul>

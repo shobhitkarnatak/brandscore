@@ -72,10 +72,12 @@ const Sidebar = ({
 							className='w-12'
 						/>
 					</div>
-					<div className='px-2'>
-						<p className='text-sm'>Sunil</p>
-						<p className='text-[#02ABFE]'>Logout</p>
-					</div>
+					{!collapsed && (
+						<div className='px-2'>
+							<p className='text-sm'>Sunil</p>
+							<p className='text-[#02ABFE]'>Logout</p>
+						</div>
+					)}
 				</div>
 				<nav className='flex-grow'>
 					<ul

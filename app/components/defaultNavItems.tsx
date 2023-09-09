@@ -17,42 +17,41 @@ export const defaultNavItems: NavItem[] = [
 	{
 		label: 'Dashboard',
 		href: '/dashboard',
-		icon: <HomeIcon className='w-6 h-6' />,
+		icon: <HomeIcon className='w-4 h-4' />,
 	},
 	{
 		label: 'Group',
 		href: '/group',
-		icon: <HomeIcon className='w-6 h-6' />,
+		icon: <UserGroupIcon className='w-4 h-4' />,
 	},
-
 	{
 		label: 'Industry',
 		href: '/industry',
-		icon: <UserGroupIcon className='w-6 h-6' />,
+		icon: <FolderIcon className='w-4 h-4' />,
 	},
 	{
 		label: 'Company',
 		href: '/company',
-		icon: <FolderIcon className='w-6 h-6' />,
+		icon: <FolderIcon className='w-4 h-4' />,
 	},
 	{
 		label: 'User Control',
 		href: '/user-control',
-		icon: <CalendarIcon className='w-6 h-6' />,
+		icon: <FolderIcon className='w-4 h-4' />,
 	},
 	{
 		label: 'Source',
 		href: '/source',
-		icon: <CalendarIcon className='w-6 h-6' />,
+		icon: <FolderIcon className='w-4 h-4' />,
 	},
 	{
 		label: 'Source Global',
 		href: '/sourceglobal',
-		icon: <CalendarIcon className='w-6 h-6' />,
+		icon: <FolderIcon className='w-4 h-4' />,
 	},
 	{
 		label: 'Twitter Handler',
 		href: '/twitterhandle',
-		icon: <CalendarIcon className='w-6 h-6' />,
+		icon: <CalendarIcon className='w-4 h-4' />,
 	},
 ];

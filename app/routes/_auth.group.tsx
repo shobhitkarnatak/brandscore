@@ -16,7 +16,7 @@ export default function Group() {
 					+ Add New Group
 				</button>
 			</div>
-			<div className='border border-gray-300 bg-white rounded-md p-4'>
+			<div className='border border-[#edeef2] bg-white rounded-md p-4'>
 				<Outlet />
 			</div>
 		</div>

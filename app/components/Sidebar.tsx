@@ -7,7 +7,7 @@ import {
 	ChevronDoubleRightIcon,
 } from '@heroicons/react/24/outline';
 import { Link, useLocation } from '@remix-run/react';
-import {  defaultNavItems } from './defaultNavItems';
+import { defaultNavItems } from './defaultNavItems';
 
 export type NavItem = {
 	label: string;
@@ -18,7 +18,7 @@ export type NavItem = {
 // add NavItem prop to component prop
 type Props = {
 	collapsed: boolean;
-	navItems?: NavItem[] ;
+	navItems?: NavItem[];
 	setCollapsed(collapsed: boolean): void;
 	shown: boolean;
 };
@@ -29,13 +29,12 @@ const Sidebar = ({
 	setCollapsed,
 }: Props) => {
 	const Icon = collapsed ? ChevronDoubleRightIcon : ChevronDoubleLeftIcon;
-	const {pathname} = useLocation()
- 
+	const { pathname } = useLocation();
+
 	return (
 		<div
 			className={classNames({
-				'bg-white fixed md:static md:translate-x-0 z-20 shadow-lg':
-					true,
+				'bg-white fixed md:static md:translate-x-0 z-20 shadow-lg': true,
 				'transition-all duration-300 ease-in-out': true,
 				'w-[275px]': !collapsed,
 				'w-16': collapsed,
@@ -54,12 +53,29 @@ const Sidebar = ({
 						'p-4 justify-between': !collapsed,
 						'py-4 justify-center': collapsed,
 					})}>
-					{!collapsed && <h2 className='whitespace-nowrap text-xl'>BRAND <span className='font-bold'>SCORE</span></h2>}
+					{!collapsed && (
+						<img
+							src='http://brandscore.in/assets/images/incight-logo.png'
+							className='w-28'
+						/>
+					)}
 					<button
 						className='grid place-content-center hover:bg-blue-600 w-10 h-10 rounded-full opacity-0 md:opacity-100 hover:text-white'
 						onClick={() => setCollapsed(!collapsed)}>
 						<Icon className='w-5 h-5' />
 					</button>
+				</div>
+				<div className='flex px-4 py-2 '>
+					<div>
+						<img
+							src='http://brandscore.in/assets/images/user-icon.png'
+							className='w-12'
+						/>
+					</div>
+					<div className='px-2'>
+						<p className='text-sm'>Sunil</p>
+						<p className='text-[#02ABFE]'>Logout</p>
+					</div>
 				</div>
 				<nav className='flex-grow'>
 					<ul
@@ -73,10 +89,10 @@ const Sidebar = ({
 									className={classNames({
 										'text-gray-800 text-sm flex': true, //colors
 										'transition-colors duration-300': true, //animation
-										'rounded-md p-2 mx-3 gap-4 ': !collapsed,
+										'rounded-md p-2 px-3 gap-4 ': !collapsed,
 										'rounded-full p-2 mx-3 w-10 h-10': collapsed,
-										'bg-blue-600 text-white': pathname === item.href
-										
+										'bg-gradient-to-br from-[#f54266] via-[#3858f9] to-[#3858f9] text-white':
+											pathname === item.href,
 									})}>
 									<Link to={item.href} className='flex gap-2'>
 										{item.icon} <span>{!collapsed && item.label}</span>

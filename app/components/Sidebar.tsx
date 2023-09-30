@@ -138,7 +138,7 @@ const Sidebar = ({
                             {item.icon} <span>{!collapsed && item.label}</span>
                           </span>
                         </span>
-                        <svg
+                        {item?.navItem?.length > 0 &&  <svg
                           className="w-3 h-3"
                           aria-hidden="true"
                           xmlns="http://www.w3.org/2000/svg"
@@ -152,7 +152,8 @@ const Sidebar = ({
                             strokeWidth="2"
                             d="m1 1 4 4 4-4"
                           />
-                        </svg>
+                        </svg>}
+                       
                       </div>
                     </li>
                   </button>

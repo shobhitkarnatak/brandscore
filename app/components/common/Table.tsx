@@ -53,17 +53,17 @@ export function Table({ tableData, column, totalCount }: any) {
 
 	return (
 		<>
-			<div className='max-w-full overflow-x-auto mb-6 bg-white'>
-				<table className='w-full border border-gray-300 relative'>
-					<thead className=''>
+			<div className='mb-6 bg-white  border-gray-300 relative'>
+				<table className='w-full border border-gray-300 relativ'>
+					<thead className='border-gray-300 relative ' >
 						{table?.getHeaderGroups()?.map((headerGroup) => (
 							<tr
 								key={headerGroup.id}
-								className='py-2 px-4 border-y-2 border-t-[1px] border-[#edeef2]'>
+								className='w-full py-2 px-4 border-y-2 border-b-4 order-t-[1px] border-[#edeef2] overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-200 scrollbar-track-gray-100'>
 								{headerGroup.headers?.map((header) => (
 									<th
 										key={header.id}
-										className='py-4 w-40 text-[14px] font-bold border-r-[1px] border-[#edeef2] text-left px-4'>
+										className='py-4 text-sm text-[14px]  font-bold border-r-[1px] border-[#edeef2] text-left px-4'>
 										{header.isPlaceholder
 											? null
 											: flexRender(

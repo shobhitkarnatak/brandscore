@@ -12,6 +12,9 @@ import styles from "./tailwind.css";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: styles },
+  {
+    rel:"stylesheet" , href:"https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Quicksand:wght@500&display=swap"
+  },
   ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref } , ] : []),
 ];
 

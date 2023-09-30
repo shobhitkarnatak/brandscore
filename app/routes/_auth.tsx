@@ -10,7 +10,7 @@ const Layout = (props: any) => {
 	return (
 		<div
 			className={classNames({
-				'flex bg-[#f8f8f8] min-h-screen': true,
+				'flex bg-white min-h-screen': true,
 				'grid-cols-sidebar': !collapsed,
 				'grid-cols-sidebar-collapsed': collapsed,
 				'transition-[grid-template-columns] duration-300 ease-in-out': true,
@@ -20,7 +20,7 @@ const Layout = (props: any) => {
 				setCollapsed={setSidebarCollapsed}
 				shown={showSidebar}
 			/>
-			<div className='w-full px-10 py-4 bg-gray-50'>
+			<div className='w-full px-10 py-4 bg-gray-50 overflow-hidden'>
 				<Outlet />
 			</div>
 		</div>

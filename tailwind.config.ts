@@ -3,7 +3,16 @@ import type { Config } from "tailwindcss";
 export default {
   content: ["./app/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+     extend:{
+      colors:{
+        primary:"#02abfe"
+      },
+      fontFamily: {
+        'poppins': ['Poppins', 'sans-serif']
+      },
+     }
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
 } satisfies Config;

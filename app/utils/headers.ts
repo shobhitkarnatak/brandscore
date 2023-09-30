@@ -222,3 +222,43 @@ export const userControlColumn = [
 		cell: ({ row }: any) => IndustryDetails(row),
 	},
 ];
+
+export const InputManagerCompanyColumn = [
+	{
+		header: 'NEW LAST UPDATE',
+		accessorKey: 'NEW_LAST_UPDATE',
+	},
+	{
+		header: 'TWITTER LAST mUPDATE',
+		accessorKey: 'TWITTER_LAST_UPDATE',
+	},
+	{
+		header: 'FACEBOOK LAST UPDATE',
+		accessorKey: 'FACEBOOK_LAST_UPDATE',
+	},
+	{
+		header: 'QUERY',
+		accessorKey: 'QUERY_NAME',
+	},
+	{
+		header: 'KEYWORDS',
+		accessorKey: 'KEYWORDS',
+	},
+	{
+		header: 'NEW KEYWORDS',
+		accessorKey: 'NEW_KEYWORDS',
+	},
+	{
+		header: 'TWITTER KEYWORDS',
+		accessorKey: 'TWITTER_KEYWORDS',
+	},
+	{
+		header: 'FACEBOOK_PAGE',
+		accessorKey: 'FACEBOOK_PAGE',
+	},
+	
+	{
+		header: 'TWITTER HANDLE',
+		accessorKey: 'TWITTER_HANDLE',
+	},
+];

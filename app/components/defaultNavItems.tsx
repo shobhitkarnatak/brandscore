@@ -30,6 +30,14 @@ export const defaultNavItems: NavItem[] = [
 		navItem:[]
 	},
 	{
+		label: 'Telecom',
+		href: '/industry-detail',
+		icon: <HomeIcon className='w-4 h-4' />,
+		isSelected:true,
+		parent:"industry-detail",
+		navItem:[]
+	},
+	{
 		label: 'Group',
 		href: '/group',
 		icon: <UserGroupIcon className='w-4 h-4' />,

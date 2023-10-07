@@ -51,7 +51,7 @@ const Sidebar = ({
     navigate(item.href);
   };
 
-  console.log("Path is", pathname.split("/")[1]);
+   
 
   return (
     <div

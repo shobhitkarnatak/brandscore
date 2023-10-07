@@ -125,3 +125,132 @@ export const InputManagerCards= [
 
     } 
 ]
+
+export const telecomData = [
+    {
+        title:"Idea vodafone",
+        count: 0,
+        average:[
+            {
+              text:"Weekly avg",
+              count:"0.00"
+            },
+            {
+                text:"Fortnightly avg",
+                count:"0.00"
+              },
+              {
+                text:"Monthly avg",
+                count:"0.00"
+              }
+
+        ],
+        social:[
+            {
+                text:"Print",
+                count:"0",
+                icons:"print"
+            },
+            {
+                text:"Digital News",
+                count:"0",
+                icons:"news"
+            },
+            {
+                text:"Twitter",
+                count:"0",
+                icons:"twitter"
+            },
+            {
+                text:"Facebook",
+                count:"0",
+                icons:"facebook"
+            }
+        ]
+
+    },
+    {
+        title:"Reliance Jio Infocomm Ltd",
+        count: 0,
+        average:[
+            {
+              text:"Weekly avg",
+              count:"0.00"
+            },
+            {
+                text:"Fortnightly avg",
+                count:"0.00"
+              },
+              {
+                text:"Monthly avg",
+                count:"0.00"
+              }
+
+        ],
+        social:[
+            {
+                text:"Print",
+                count:"0",
+                icons:"print"
+            },
+            {
+                text:"Digital News",
+                count:"0",
+                icons:"news"
+            },
+            {
+                text:"Twitter",
+                count:"0",
+                icons:"twitter"
+            },
+            {
+                text:"Facebook",
+                count:"0",
+                icons:"facebook"
+            }
+        ]
+
+    },
+    {
+        title:"Bharti Airtel",
+        count: 0,
+        average:[
+            {
+              text:"Weekly avg",
+              count:"0.00"
+            },
+            {
+                text:"Fortnightly avg",
+                count:"0.00"
+              },
+              {
+                text:"Monthly avg",
+                count:"0.00"
+              }
+
+        ],
+        social:[
+            {
+                text:"Print",
+                count:"0",
+                icons:"print"
+            },
+            {
+                text:"Digital News",
+                count:"0",
+                icons:"news"
+            },
+            {
+                text:"Twitter",
+                count:"0",
+                icons:"twitter"
+            },
+            {
+                text:"Facebook",
+                count:"0",
+                icons:"facebook"
+            }
+        ]
+
+    }
+]
